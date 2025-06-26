@@ -1,0 +1,72 @@
+# version: '3.8'
+
+# services:
+#   frontend:
+#     build:
+#       context: ./frontend
+#       dockerfile: Dockerfile
+#       args:
+#         VITE_BASE_API: http://backend:8000/api
+#         VITE_BASE_SOCKET: http://backend:8000
+#     ports:
+#       - "5173:80" 
+#     environment:
+#       VITE_BASE_API: http://backend:8000/api # Runtime value
+#       VITE_BASE_SOCKET: http://backend:8000  # Runtime value
+#     depends_on:
+#       - backend
+#     networks:
+#       - app_network  
+
+#   backend:
+#     build:
+#       context: ./backend
+#       dockerfile: Dockerfile
+#     ports:
+#       - "8000:8000" 
+#     env_file:
+#       - ./backend/.env
+#     networks:
+#       - app_network  
+
+# networks:
+#   app_network:
+#     driver: bridge    
+
+# docker-compose.yml
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80"
+    volumes:
+      - ./frontend:/app/frontend
+      - /app/frontend/node_modules 
+    env_file:
+      - ./frontend/.env 
+    depends_on:
+      - backend
+    networks:
+      - liachat_network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app/backend
+      - /app/backend/node_modules 
+    env_file:
+      - ./backend/.env 
+    networks:
+      - liachat_network
+
+networks:
+  liachat_network:
+    driver: bridge
