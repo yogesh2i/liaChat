@@ -24,7 +24,7 @@ LiaChat is a modern, real-time chat application designed for instant communicati
   * **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine, used for building scalable network applications.
   * **Express**: A fast, unopinionated, minimalist web framework for Node.js, used for building robust APIs.
   * **Socket.IO**: The same powerful library used on the frontend, enabling real-time communication between the server and clients.
-  * **MongoDB**: A popular NoSQL document database used for storing chat history efficiently.
+  * **MongoDB / MongoAtlas**: A popular NoSQL document database used for storing chat history efficiently.
   * **Google Gemini AI**: Leveraged for its advanced capabilities in summarizing chat history.
 
 ## Application Flow
