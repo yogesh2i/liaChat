@@ -4,7 +4,7 @@ LiaChat is a modern, real-time chat application designed for instant communicati
 
 <a href="https://regal-figolla-01a138.netlify.app/">**Checkout Live Here**</a>
 
-## ✨ Features
+##  Features
   * **Login-Logout Feature**: Login or register using username.
   * **Real-Time Messaging**: Send and receive messages instantly with WebSocket technology.
   * **Typing Indicators**: See when other users are actively typing a message.
@@ -12,7 +12,7 @@ LiaChat is a modern, real-time chat application designed for instant communicati
   * **Chat Summarization**: Quickly get the gist of long conversations using intelligent summarization provided by Google Gemini AI.
   * **Responsive Design**: Enjoy a consistent and seamless experience on desktops, tablets, and mobile devices, thanks to TailwindCSS.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -122,7 +122,7 @@ Once both the backend and frontend servers are running, open your web browser an
 http://localhost:5173
 ```
 
-## 📂 Project Structure
+## Project Structure
 
 
 ```
@@ -170,7 +170,7 @@ LiaChat/
     └── package.json
 ```
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 ### Chat Endpoints
 
