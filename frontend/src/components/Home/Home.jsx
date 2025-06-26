@@ -46,6 +46,7 @@ export default function Home() {
             setNotification((prev) => [...prev, message]);
         })
         socket.on('typing', (message) => {
+            //if user is already typing we wont show the notification again
             setNotification((prev) => {
                 const isTypingAlready = prev.some(
                     (n) => n.user === message.user && n.type === 'typing'
@@ -57,6 +58,7 @@ export default function Home() {
             });
         })
         socket.on('stopTyping', (message) => {
+            //remove typing notification when user stops typing
             setNotification((prev) => prev.filter((n) => !(n.user === message.user && n.type === 'typing')))
         })
         socket.on('message', (message) => {
