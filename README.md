@@ -2,6 +2,8 @@
 
 LiaChat is a modern, real-time chat application designed for instant communication. It includes features like real-time messaging, typing indicators, and innovative chat summarization powered by Google Gemini AI. Built with a robust tech stack, LiaChat offers a seamless and responsive user experience across all devices.
 
+<a href="https://regal-figolla-01a138.netlify.app/">**Checkout Live Here**</a>
+
 ## ✨ Features
   * **Login-Logout Feature**: Login or register using username.
   * **Real-Time Messaging**: Send and receive messages instantly with WebSocket technology.
