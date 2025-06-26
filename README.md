@@ -85,7 +85,7 @@ Create `.env` files in both the `frontend` and `backend` directories as follows:
     MONGO_URI=your_mongodb_connection_string
     GOOGLE_GEMINI_API_KEY=your_google_gemini_api_key
     PROD_URL= http://localhost:8000
-    ALLOWED_ORIGIN= your_frontend_url
+    ALLOWED_ORIGIN= http://localhost:5173
     ```
 
 
@@ -106,6 +106,13 @@ Create `.env` files in both the `frontend` and `backend` directories as follows:
     cd frontend
     npm run dev
     ```
+
+### OR Using docker 
+   After creating env files for both backend and frontend run:
+   
+   ```
+    docker compose up --build
+   ```
 
 ### Access the Application
 
